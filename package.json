@@ -1,0 +1,20 @@
+{
+  "name": "gazetalb",
+  "version": "1.0.0",
+  "description": "Gazeta në Gjuhën Shqipe - Albanian Newspaper Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm start",
+    "dev:server": "cd server && npm start",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["gazeta", "lajme", "shqip", "news", "albania"],
+  "author": "nderiim97",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
